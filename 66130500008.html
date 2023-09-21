@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Contest Entry Form</title>
+  <style type="text/css">
+    ol,
+    ul {
+      list-style-type: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+
+  <p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have
+    <em>got</em> to go and you may be one of ten lucky winners.
+  </p>
+
+  <!-- put the form element and form contols after here-->
+
+  <form action="/contest" method="post">
+
+    <p>Contest Entry Information</p>
+
+    <ul>
+      <li>
+        <label for="name"> Name: </label>
+        <input type="text" name="name" id="name">
+      </li>
+
+      <li>
+        <label for="email"> Email Address: </label>
+        <input type="email" name="email" id="email">
+      </li>
+
+      <li>
+        <label for="phone"> Telephone Number: </label>
+        <input type="tel" name="phone" id="phone">
+      </li>
+      
+      <li>
+        <label for="story">My shoes are SO old…</label>
+        <br>
+        <textarea rows="4" cols="60" name="story" id="story" placeholder="No more than 300 characters long"></textarea>
+      </li>
+
+    </ul>
+
+
+    <h2>Design your custom Forcefields:</h2>
+    <fieldset>
+      <legend> Custom Shoe Design </legend>
+      <fieldset>
+        <legend>Color <em>(choose one)</em>:</legend>
+        <ul>
+          <li>
+            <input type="radio" name="color" id="red" value="red">
+            <label for="red">Red</label>
+          </li>
+          
+          <li>
+            <input type="radio" name="color" id="blue" value="blue">
+            <label for="blue">Blue</label>
+          </li>
+
+          <li>
+            <input type="radio" name="color" id="black" value="black">
+            <label for="black">Black</label>
+          </li>
+
+          <li>
+            <input type="radio" name="color" id="silver" value="silver">
+            <label for="silver">Silver</label>
+          </li>
+        </ul>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Features <em>(Choose as many as you want)</em></legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="feature" id="laces" value="laces">
+            <label for="laces">Sparkley laces</label>
+          </li>
+          
+          <li>
+            <input type="checkbox" name="feature" id="logo" value="logo" checked>
+            <label for="logo">Metallic logo</label>
+          </li>
+          
+          <li>
+            <input type="checkbox" name="feature" id="heels" value="heels">
+            <label for="heels">Light-up heels</label>
+          </li>
+          
+          <li>
+          <input type="checkbox" name="feature" id="mp3" value="mp3">
+          <label for="mp3">MP3-enabled</label>         
+          </li>
+        </ul>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Size</legend>
+        <label for="size">Sizes reflect standard men's sizes::</label>
+
+        <select name="size" id="size">
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="12">13</option>
+        </select>        
+      </fieldset>
+
+    </fieldset>
+    <!-- this is the end of form element before this comment-->
+    <br>
+    <input type="submit" value="Pimp my shoes!">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+
+</html>
